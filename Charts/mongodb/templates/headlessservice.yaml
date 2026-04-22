@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop
 spec:
   # This makes the service "headless"
-  clusterIP:   {{ .Values.mongodb.headlessservice.clusterip }} 
+  clusterIP: "{{ .Values.mongodb.headlessservice.clusterip }}"
   selector:
     project: roboshop
     tier: db

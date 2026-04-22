@@ -12,7 +12,7 @@ spec:
     project: roboshop
     tier: backend
     component: user 
-  type: {{ .Values.user.service.type }}
+  type: ClusterIP
   ports:
     - protocol: TCP
       port: 8080

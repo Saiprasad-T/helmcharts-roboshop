@@ -5,5 +5,5 @@ metadata:
   namespace: roboshop
 data:
   MONGO: "true"
-  REDIS_URL: "{{ .Values.configmap.REDIS_URL }}" 
-  MONGO_URL: "{{ .Values.configmap.MONGO_URL }}"
+  REDIS_URL: "{{ .Values.user.configmap.REDIS_URL }}" 
+  MONGO_URL: "{{ .Values.user.configmap.MONGO_URL }}"

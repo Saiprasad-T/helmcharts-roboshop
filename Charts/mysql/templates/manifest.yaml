@@ -14,7 +14,7 @@ spec:
       tier: db
       component: mysql # has to match .spec.template.metadata.labels
   serviceName: "mysql-headless-service"
-  replicas: {{ .Values.statefulset.replicas }}
+  replicas: {{ .Values.mysql.statefulset.replicas }}
   minReadySeconds: 10 # by default is 0
   template:
     metadata:
@@ -26,7 +26,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
        - name: mysql
-         image: "{{ .Values.statefulset.repository }}:{{ .Values.statefulset.tag }}"
+         image: "{{ .Values.mysql.statefulset.repository }}:{{ .Values.mysql.statefulset.tag }}"
          imagePullPolicy: Always
          resources:
            requests:

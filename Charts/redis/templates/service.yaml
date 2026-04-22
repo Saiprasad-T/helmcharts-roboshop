@@ -12,7 +12,7 @@ spec:
     project: roboshop
     tier: db
     component: redis 
-  type: {{ .Values.service.clusterip }}
+  type: {{ .Values.redis.service.clusterip }}
   ports:
     - protocol: TCP
       port: 6379

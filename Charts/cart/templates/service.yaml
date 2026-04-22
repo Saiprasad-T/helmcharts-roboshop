@@ -12,7 +12,7 @@ spec:
     project: roboshop
     tier: backend
     component: cart 
-  type: {{ .Values.service.type }}
+  type: {{ .Values.cart.service.type }}
   ports:
     - protocol: TCP
       port: 8080

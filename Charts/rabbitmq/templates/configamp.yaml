@@ -4,5 +4,5 @@ metadata:
   name: rabbitmq
   namespace: roboshop
 data:
-  RABBITMQ_DEFAULT_USER: "{{ .Values.configmap.RABBITMQ_DEFAULT_USER }}"
-  RABBITMQ_DEFAULT_PASS: "{{ .Values.configmap.RABBITMQ_DEFAULT_PASS }}"
+  RABBITMQ_DEFAULT_USER: "{{ .Values.rabbitmq.configmap.RABBITMQ_DEFAULT_USER }}"
+  RABBITMQ_DEFAULT_PASS: "{{ .Values.rabbitmq.configmap.RABBITMQ_DEFAULT_PASS }}"

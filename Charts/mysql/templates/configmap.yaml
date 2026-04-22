@@ -4,4 +4,4 @@ metadata:
   name: mysql
   namespace: roboshop
 data:
-  MYSQL_ROOT_PASSWORD:  "{{ .Values.configmap.MYSQL_ROOT_PASSWORD}}"
+  MYSQL_ROOT_PASSWORD:  "{{ .Values.mysql.configmap.MYSQL_ROOT_PASSWORD}}"

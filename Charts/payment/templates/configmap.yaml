@@ -4,10 +4,10 @@ metadata:
   name: payment
   namespace: roboshop
 data:
-  CART_HOST: "{{ .Values.configmap.CART_HOST }}"
-  CART_PORT: "{{ .Values.configmap.CART_PORT }}"
-  USER_HOST: "{{ .Values.configmap.USER_HOST }}"
-  USER_PORT: "{{ .Values.configmap.USER_PORT }}"
-  AMQP_HOST: "{{ .Values.configmap.AMQP_HOST }}"
-  AMQP_USER: "{{ .Values.configmap.AMQP_USER }}"
-  AMQP_PASS: "{{ .Values.configmap.AMQP_PASS }}"
+  CART_HOST: "{{ .Values.payment.configmap.CART_HOST }}"
+  CART_PORT: "{{ .Values.payment.configmap.CART_PORT }}"
+  USER_HOST: "{{ .Values.payment.configmap.USER_HOST }}"
+  USER_PORT: "{{ .Values.payment.configmap.USER_PORT }}"
+  AMQP_HOST: "{{ .Values.payment.configmap.AMQP_HOST }}"
+  AMQP_USER: "{{ .Values.payment.configmap.AMQP_USER }}"
+  AMQP_PASS: "{{ .Values.payment.configmap.AMQP_PASS }}"

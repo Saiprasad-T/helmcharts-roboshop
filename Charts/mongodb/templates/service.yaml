@@ -12,7 +12,7 @@ spec:
     project: roboshop
     tier: db
     component: mongodb 
-  type: {{ .Values.service.type }}
+  type: {{ .Values.mongodb.service.type }}
   ports:
     - protocol: TCP
       port: 27017

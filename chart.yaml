@@ -1,0 +1,44 @@
+apiVersion: v2
+name: roboshop
+version: 0.0.1
+
+dependencies:
+  - name: catalogue
+    version: 0.0.1
+    repository: "file://charts/catalogue"
+
+  - name: cart
+    version: 0.0.1
+    repository: "file://charts/cart"
+
+  - name: mongodb
+    version: 0.0.1
+    repository: "file://charts/mongodb"
+
+  - name: user
+    version: 0.0.1
+    repository: "file://charts/user"
+
+  - name: redis
+    version: 0.0.1
+    repository: "file://charts/redis"
+
+  - name: rabbitmq
+    version: 0.0.1
+    repository: "file://charts/rabbitmq"
+
+  - name: payment
+    version: 0.0.1
+    repository: "file://charts/payment"
+
+  - name: shipping
+    version: 0.0.1
+    repository: "file://charts/shipping"
+
+  - name: mysql
+    version: 0.0.1
+    repository: "file://charts/mysql"
+
+  - name: frontend
+    version: 0.0.1
+    repository: "file://charts/frontend"

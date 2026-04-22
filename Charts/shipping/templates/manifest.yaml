@@ -13,7 +13,7 @@ spec:
       project: roboshop
       tier: backend
       component: shipping
-  replicas: {{ .Values.deployment.replicas }}
+  replicas: {{ .Values.shipping.deployment.replicas }}
   template:
     metadata:
       labels:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: shipping
-          image: "{{ .Values.deployment.repository}}:{{ .Values.deployment.tag }}"
+          image: "{{ .Values.shipping.deployment.repository}}:{{ .Values.shipping.deployment.tag }}"
           imagePullPolicy: Always
           resources:
             requests:

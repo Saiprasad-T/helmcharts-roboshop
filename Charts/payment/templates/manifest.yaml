@@ -13,7 +13,7 @@ spec:
       project: roboshop
       tier: backend
       component: payment
-  replicas: {{ .Values.deployment.replicas }}
+  replicas: {{ .Values.payment.deployment.replicas }}
   template:
     metadata:
       labels:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: payment
-          image: "{{ .Values.deployment.repository }}:{{ .Values.deployment.tag }}"
+          image: "{{ .Values.payment.deployment.repository }}:{{ .Values.payment.deployment.tag }}"
           imagePullPolicy: Always
           resources:
             requests:

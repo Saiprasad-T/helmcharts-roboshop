@@ -1,0 +1,50 @@
+dependencies:
+  - name: catalogue
+    version: 0.0.1
+    appVersion: l.0.0
+    description: Catalogue service Helm chart
+
+  - name: cart
+    version: 0.0.1
+    appVersion: l.0.0
+    description: cart service Helm chart
+
+  - name: mongodb
+    version: 0.0.1
+    appVersion: l.0.0
+    description: mongodb service Helm chart
+
+  - name: user
+    version: 0.0.1
+    appVersion: l.0.0
+    description: user service Helm chart
+
+  - name: redis
+    version: 0.0.1
+    appVersion: l.0.0
+    description: redis service Helm chart
+
+  - name: rabbitmq
+    version: 0.0.1
+    appVersion: l.0.0
+    description: rabbitmq service Helm chart
+
+  - name: payment
+    version: 0.0.1
+    appVersion: l.0.0
+    description: payment service Helm chart
+
+  - name: shipping
+    version: 0.0.1
+    appVersion: l.0.0
+    description: shipping service Helm chart
+
+  - name: mysql
+    version: 0.0.1
+    appVersion: l.0.0
+    description: mysql service Helm chart
+
+  - name: frontend
+    version: 0.0.1
+    appVersion: l.0.0
+    description: frontend service Helm chart

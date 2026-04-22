@@ -1,0 +1,9 @@
+statefulset:
+  replicas: 1
+image:
+  repository: "saithota9/mongodb"
+  tag: "1.0.0"
+headless-service:
+  clusterip: None
+service:
+  type: ClusterIP

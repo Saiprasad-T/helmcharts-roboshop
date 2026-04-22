@@ -3,7 +3,7 @@ statefulset:
 image:
   repository: "saithota9/mongodb"
   tag: "1.0.0"
-headless-service:
+headlessservice:
   clusterip: None
 service:
   type: ClusterIP
